@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=script, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        //q1
+
+        function question1(){
+            let status="online";
+        }
+
+        question1();
+        console.log(status);
+
+
+        //q2
+           function question2(){
+            let x="outer";
+               function inner(){
+                let x="inner"
+                console.log(x);//inner
+               }
+               inner();
+               console.log(x);//outer
+
+
+           }
+
+          question2();
+
+        //q3
+
+
+        function question3(){
+            console.log(state);//undefined
+            var state="ap"
+            console.log(state);//ap
+
+        }
+        question3();
+
+
+        //q4
+
+
+        function question4(){
+            for(i=0;i<=1;i--){
+              var i="100";
+            } 
+            
+            console.log(i);//99
+             }
+
+            question4();
+
+
+
+    //q5
+
+
+    
+
+
+
+
+           
+
+    </script>
+</body>
+</html>
