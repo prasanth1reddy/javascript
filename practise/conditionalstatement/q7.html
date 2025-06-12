@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   Role and Department Access Control
+Ask for role (admin, manager, employee) and department.
+Use switch on role:
+• Inside each case
+• If department is HR → Show "Edit Access Granted"
+• Else → Show "View Only Access"
+
+
+<script>
+    let role=prompt("enter your role:(admin,manager,employee)");
+    let department=prompt("is hr(yes or no)");
+
+switch(role){
+    case "admin":
+        if(department=="yes"){
+            console.log("Edit Access Granted");
+        }
+        else{
+           console.log("View Only Access");
+        }
+        break;
+         case "manager":
+        if(department=="yes"){
+            console.log("Edit Access Granted");
+        }
+        else{
+           console.log("View Only Access");
+        }
+        break;
+         case "employee":
+        if(department=="yes"){
+            console.log("Edit Access Granted");
+        }
+        else{
+           console.log("View Only Access");
+        }
+        break;
+
+}
+
+</script>
+
+</body>
+</html>

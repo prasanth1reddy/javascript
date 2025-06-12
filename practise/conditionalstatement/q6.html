@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    Ask for language (en, hi, fr) and time of day (morning or evening).
+Use switch on language:
+• Inside each case
+• If morning → Show "Good Morning" in that language
+• Else → Show "Good Evening" in that language
+
+
+<button onclick="function1()"></button> 
+    <p id="para">language</p>
+
+<script>
+function function1(){
+      
+    let language=prompt("code is");
+    let message="";
+
+     let morning=prompt("is morning(true or false)");
+    switch(language){
+        
+
+        case "en":
+            //let morning=prompt("is morning(true or false)");
+            if(morning=="true"){
+                message="Good Morning" ;
+            }
+            else{
+                 message="Good Evening" ;
+            }
+           break;
+           case "hi":
+           //let morning=prompt("is morning(true or false)");
+            if(morning=="true"){
+                message="Subhodhay" ;
+            }
+            else{
+                 message="Subharath" ;
+            }
+            break;
+            case "te":
+            //   let morning=prompt("is morning(true or false)");
+            if(morning=="true"){
+                message="Subhodhayam" ;
+            }
+            else{
+                 message="SubhaRathri" ;
+            }
+                break;
+                default:
+                    message="no language";
+
+}
+document.getElementById("para").innerText=message
+
+}
+
+function1()
+
+</script>
+
+</body>
+</html>

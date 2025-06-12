@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Mobile Plan Chooser
+Ask for mobile plan (basic, standard, premium) and whether the user is a student.
+Use switch on plan:
+• Inside each case
+• If user is a student → Show "Extra student discount applied"
+• Else → Show "Standard pricing applied"
+
+<script>
+
+let MobilePlan=prompt("mobilePlan(basic,standard,premium)");
+let user=prompt("Whether the user is student(yes or no)");
+
+switch(MobilePlan){
+    case "basic":
+        if(user=="yes"){
+            console.log("Extra student discount applied")
+        }
+        else{
+            console.log("Standard pricing applied");
+        }
+        break;
+         case "standard":
+        if(user=="yes"){
+            console.log("Extra student discount applied")
+        }
+        else{
+            console.log("Standard pricing applied");
+        }
+        break;
+         case "premium":
+        if(user=="yes"){
+            console.log("Extra student discount applied")
+        }
+        else{
+            console.log("Standard pricing applied");
+        }
+        break;
+        
+
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Dynamic Offer Display
+Ask the user for cart value and Prime status (yes or no).
+Display:
+• If cart value is more than 1000
+• And user is Prime → Show "Free Delivery and 20 percent Discount"
+• Not Prime → Show "Free Delivery and 10 percent Discount"
+• If cart value is between 500 and 1000
+• Prime → Show "10 percent Discount"
+• Not Prime → Show "Delivery Charge is 50 rupees"
+• If cart value is less than 500 → Show "No Offers Available"
+
+
+<script>
+
+    let CartValue=Number(prompt("CartValue:"));
+    
+
+if(CartValue>=1000){
+    let user=prompt("user is prime or NotPrime");
+    if(user=="yes"){
+        console.log("Free Delivery and 20 percent Discount");
+
+    }
+    else{
+        console.log("Free Delivery and 10 percent Discount");
+    }
+}
+else if(CartValue>=500 && CartValue<=1000){
+    let user=prompt("user is prime or NotPrime");
+    if(user=="yes"){
+        console.log("10 percent Discount");
+
+    }
+    else{
+        console.log("Delivery Charge is 50 rupees");
+    }
+
+}
+else if(CartValue<=500){
+    console.log("No Offers Available");
+}
+
+
+</script>
+
+
+</body>
+</html>

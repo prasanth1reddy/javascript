@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Ask for weather type (rainy, sunny, snow) and temperature.
+Use switch on weather type:
+• Inside each case
+• If temperature is below threshold → Show "Stay inside"
+• Else → Show "Wear protection"
+
+<script>
+
+    let Weather=prompt("Weathertype:(rainy,sunny,snow)");
+    let Temperature=Number(prompt("Temperature is"));
+
+    switch(Weather){
+        case "rainy":
+            if(Temperature>=25){
+                console.log("Stay inside");
+            }
+            else{
+                console.log("Wear protection");
+            }
+            break;
+            case "sunny":
+            if(Temperature>=25){
+                console.log("Stay inside");
+            }
+            else{
+                console.log("Wear protection");
+            }
+            break;
+            case "snow":
+            if(Temperature>=25){
+                console.log("Stay inside");
+            }
+            else{
+                console.log("Wear protection");
+            }
+            break;
+
+
+    }
+</script>
+</body>
+</html>

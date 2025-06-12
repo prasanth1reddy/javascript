@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <script>
+
+ //       Student Grade and Scholarship Eligibility
+//Ask for marks and age.
+//• If marks are 90 or more
+//• Show "Grade A"
+//• If age is less than 18 → Show "Eligible for scholarship"
+//• Else if marks are between 70 and 89
+//• Show "Grade B"
+//• If age is greater than 21 → Show "Try again next year"
+//• Else → Show "Fail"
+
+
+let marks=Number(prompt("enter marks or age:"));
+let age=Number(prompt("enter age"));
+
+if(marks>=90  ){
+    console.log("Grade A");
+    if(age<=18){
+        console.log("Eligible for scholarship");
+    }
+}
+else if(marks>=70 && marks<=89){
+    console.log("Grade B")
+    if(age>21){
+        console.log("Try again next year")
+    }
+}
+else{
+    console.log("Fail")
+}
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
