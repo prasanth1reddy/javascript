@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    // <button onclick="function2()"></button> 
+    <p id="para">month</p>
+    <script>
+     //function function1(){
+
+       //  let number=prompt("number is:")
+//         message=""
+  //    if (number%3===0 && number%5===0)  {
+    //    message="given number is divisible by both 3 and 5"
+      //}
+//
+  //    else{
+    //    message="given number is not divisible by both 3 and 5"
+      //}
+//
+  //    document.getElementById("para").innerText=message;
+    // }
+
+      //function1() 
+
+
+
+function function2(){
+
+    let months=Number(prompt("number is"));
+    let message="";
+    
+     switch(months){
+        case 1:
+           message= "janurary";
+           break;
+           case 2:
+            message="feburary";
+            break;
+            case 3:
+                message="march";
+                break;
+                case 4:
+                    message="april";
+                    break;
+                    case 5:
+                        message="may";
+                        break;
+                        case 6:
+                            message="june";
+                            break;
+                            case 7:
+                                message="july";
+                                break;
+                                case 8:
+                                    message="august";
+                                    break;
+                                    case 9:
+                                        message="september";
+                                        break;
+                                        case 10:
+                                            message="october";
+                                            break;
+                                            case 11:
+                                                message="november";
+                                                break;
+                                                case 12:
+                                                    message="december";
+                                                    break;
+                                                    default:
+                                                        message="There is no month for that nymber";
+
+     }
+     document.getElementById("para").innerText=message
+
+     }
+    </script>
+
+
+</body>
+</html>
