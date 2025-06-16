@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Theme Changer with Auto Detection
+Ask user to select theme option (light, dark, auto).
+• If user selects light → Show "Light Theme Applied"
+• If user selects dark → Show "Dark Theme Applied"
+• If user selects auto
+• And time is before 6 PM → Apply Light Theme
+• Else → Apply Dark Theme
+<script>
+
+let user=prompt("enter light,dark,auto");
+
+    if(user=="light"){
+        console.log("Light Theme Applied");
+    }
+    else if(user=="dark"){
+            console.log("Dark Theme Applied");
+        }
+        
+     else if(user=="auto"){
+        let time=prompt("if the time is before 6pm :(please enter yes)")
+       if(time=="yes"){
+            console.log("Apply Light Theme");
+        }
+        else{
+            console.log("Apply Dark Theme");
+        }  
+  
+    }
+    else{
+        console.log(" please Enter valid option ");
+    }
+        
+        
+
+    
+</script>
+</body>
+</html>
