@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Bill Splitter with Promo Logic
+Ask for total bill amount, number of people, and promo code (FLAT50 or PERCENT10).
+• If promo is FLAT50 → Subtract 50 rupees from total
+• If promo is PERCENT10 → Subtract 10 percent from total
+• Else → No discount
+Then divide the final amount equally among people and show the per-person amount
+
+<script>
+    
+    let totalbillamount=prompt("Enter bill amount");
+    let noofpeople=prompt("enter no of people");
+
+    if(totalbillamount>=0){
+        let promo=prompt("FLAT50 OR PERCENT10");
+
+        if(promo=="FLAT50"){
+            let finalbill=totalbillamount-50;
+            let perperson=finalbill/noofpeople;
+            console.log(perperson);
+        }
+        else if(promo=="PERCENT10"){
+            let finalbill=totalbillamount%10;
+            let perperson=finalbill/noofpeople;
+
+
+            console.log(perperson);
+
+        }
+        else{
+    
+        }
+    }
+    
+</script>
+</body>
+</html>
