@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Course Recommendation System
+Ask the user for age and area of interest (coding, design, marketing).
+• If age is less than 18 → Show "Try Beginner Bootcamp"
+• Else use switch based on interest:
+• Coding → Show "Full Stack Development Course"
+• Design → Show "UI UX Design Course"
+• Marketing → Show "Digital Marketing Course"
+
+<script>
+
+    let age=prompt("Please Enter Age");
+    if(age<=18){
+        console.log("Try Beginner Bootcamp");
+    }
+    else{
+        let interest=prompt("please enter(Coding,Design,Marketing)");
+        switch(interest){
+            case "Coding":
+                console.log("Full Stack Development Course");
+                break;
+                case "Design":
+                    console.log("UI UX Design Course");
+                    break;
+                    case "Marketing":
+                        console.log("Digital Marketing Course");
+                        break;
+        }
+    }
+</script>
+</body>
+</html>
