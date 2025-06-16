@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Delivery Time Estimator
+Ask for product type (fragile, express, standard) and city type (metro or non-metro).
+Use switch for product type and if for city type:
+• Fragile
+• Metro: 2 days
+• Non-Metro: 4 days
+• Express
+• Metro: 1 day
+• Non-Metro: 2 days
+• Standard
+• Metro: 3 days
+• Non-Metro: 5 days
+Bill Splitter with Prom
+
+
+
+<script>
+    let producttype=prompt("Please Enter the type:(fragile,express,standard)");
+    if(producttype=="fragile"){
+        let city=prompt("Please enter:(metro or non-metro)");
+        switch(city){
+            case "metro":
+                console.log("2 days");
+                break;
+                case "non-metro":
+                    console.log("4 days");
+                    break;
+
+        }
+    }
+    else if(producttype=="express"){
+        let city=prompt("Please enter:(metro or non-metro)");
+        switch(city){
+            case "metro":
+                console.log("1 day");
+                break;
+                case "non-metro":
+                    console.log("2 days");
+                    break;
+
+        }
+    }
+    else if(producttype=="standard"){
+        let city=prompt("Please enter:(metro or non-metro)");
+        switch(city){
+            case "metro":
+                console.log("3 days");
+                break;
+                case "non-metro":
+                    console.log("5 days");
+                    break;
+
+        }
+    }
+    else{
+        console.log("please enter valid product");
+    }
+</script>
+</body>
+</html>
