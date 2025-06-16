@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Login System with 2-Step Verification
+Ask for username, password, and OTP.
+• If username and password are correct
+• And OTP is also correct → Show "Login Successful"
+• Else → Show "Invalid OTP"
+• Else → Show "Invalid Credentials"
+
+
+<script>
+
+   let correctUsername="admin";
+   let correctpassword="12345"
+   let correctotp="965234"
+
+
+
+    let username=prompt("Enter correctusername");
+    let password=prompt("Enter correctpassword");
+
+
+  if(username == correctUsername && password == correctpassword){
+
+    let otp=Number(prompt("Enter correctotp"));
+      if(otp==correctotp){
+        console.log("Login Successful");
+    }
+    else{
+        console.log("Invaid OTP");
+    }
+}
+else{
+    console.log("Invalid Credentials");
+}
+</script>
+</body>
+</html>
