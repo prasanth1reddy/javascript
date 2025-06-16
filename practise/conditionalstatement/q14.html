@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Language and Region Selector
+Ask for preferred language (en, hi, fr, es) and region (India or Other).
+Use switch for language and if for region inside each case:
+• If language is en and region is India → Show "Hello Namaste"
+• If language is hi → Show "Namaste"
+• If language is fr → Show "Bonjour"
+• If language is es → Show "Hola"
+
+
+<script>
+  let language=prompt("enter language:(en,hi,fr,es)");
+
+    if(language=="en"){
+        let religion=prompt("Please Enter Religion:(India)");
+        if (religion=="india"){
+            console.log("Hello Namaste");
+        }
+        else{
+            console.log("Please enter valid religion");
+        }   
+    }
+    else if(language=="hi"){
+        console.log("Namaste");
+    }
+    else if(language=="fr"){
+        console.log("Bonjour");
+    }
+    else if(language=="es"){
+        console.log("Hola");
+    }
+    else{
+        console.log("please enter valid language");
+    }
+</script>
+</body>
+</html>
