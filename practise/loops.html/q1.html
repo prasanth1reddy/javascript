@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 1. Product List as Bullet Points
+Create a ul using innerHTML. Loop through an array of 5 product names and display them as
+bullet points.
+let products = ["Laptop", "Mobile", "Camera", "Shoes", "Earphones"]; -->
+
+    <ul id="lists"></ul>
+    <script>
+    let unorderlist=document.getElementById("lists").innerHTML=lists
+    let products = ["Laptop", "Mobile", "Camera", "Shoes", "Earphones"];
+for(let item of products){
+    let list=document.createElement("li");
+    //let listitems=list.item;
+    list.textContent=item;
+    unorderlist.appendChild(list);
+
+}
+    </script>
+</body>
+</html>
