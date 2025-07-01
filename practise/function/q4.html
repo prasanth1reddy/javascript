@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    4. Display Product and Price (Default):
+Write a function that takes product name and price (with price as a default parameter
+= 100). Display both using innerHTML.
+
+<div id="Productprice"></div>
+<script>
+
+       let name="Iphone16";
+       function q4(name,price=100){
+        document.getElementById("Productprice").innerHTML=`${name}&${price}`;
+       }
+       q4(name);
+
+</script>
+</body>
+</html>
