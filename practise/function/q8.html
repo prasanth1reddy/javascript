@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantity Updater</title>
+</head>
+<body>
+    <div id="updater">
+        <p>Phone</p>
+        <p id="quantity">0</p>
+        <button onclick="updateQuantity(1)">+</button>
+        <button onclick="updateQuantity(-1)">-</button>
+    </div>
+
+    <script>
+        let quant = 0;
+        let quantityDisplay = document.getElementById("quantity");
+
+        function updateQuantity(change) {
+            quant += change;
+            if (quant < 0) quant = 0; // Prevent negative quantity
+            quantityDisplay.innerText = quant;
+        }
+    </script>
+</body>
+</html>
