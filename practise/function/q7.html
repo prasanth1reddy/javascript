@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    7. Multi-Button Dynamic Menu Generator:
+Create 3 buttons – each shows a different menu item and price using the same
+function with parameters.
+
+
+<div id="button"></div>
+<script>
+    let items=[
+            {
+                name:"Iphone16",
+                quantity:1,
+                price:65000,
+            },
+            {
+                name:"Samsung Galaxy",
+                quantity:1,
+                price:30000,
+            },
+            {
+                name:"1+ 9Pro",
+                quantity:1,
+                price:50000,
+            }
+        ]
+
+    function q6(items){
+        document.getElementById("button").innerHTML+=`
+        <button>${items[0].name} ${items[0].price }</button>
+        <button>${items[1].name}</button>
+        <button>${items[2].name}</button>`
+
+    }
+    q6(items);
+</script>
+</body>
+</html>
