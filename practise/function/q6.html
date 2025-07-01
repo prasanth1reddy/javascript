@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    6. Dynamic Item Billing:
+Create a function that takes item name, quantity, and price per unit. Calculate and
+display the total bill dynamically inside a <div>.
+    <div id="item"></div>
+    <script>
+        let items=[
+            {
+                name:"Iphone16",
+                quantity:2,
+                price:65000,
+            }
+        ]
+
+        function q6(items){
+            for(let i=0; i<items.length;i++){
+                document.getElementById("item").innerHTML+=`
+                <p>name=${items[i].name}</P>
+                <p>quantity=${items[i].quantity}</P>
+                <p>totalprice=${items[i].quantity*items[i].price}`
+                
+            }
+      
+        }
+        q6(items);
+    </script>
+</body>
+</html>
